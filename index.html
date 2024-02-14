@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Responsive Website </title>
+</head>
+
+<body class="bg-gradient-to-l from-slate-900 via-purple-600 to-slate-900 text-white">
+
+    <div class="min-h-screen px-6 py-3 flex flex-col gap-10 md:px-10 lg:px-16 lg:py-7">
+        <header class="flex justify-between head ">
+
+            <a href="" class="flex items-center">
+                <h1 class="text-4xl font-bold">WFA.</h1>
+            </a>
+            <ul class="hidden lg:flex lg:space-x-5 lg:font-bold cursor-pointer text-xl">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Pricing</li>
+                <li>Contact Us</li>
+            </ul>
+
+
+            <div class="hidden lg:flex lg:bg-pink-600  lg:py-4 lg:px-16 lg:rounded-lg">
+                <button class="">Login</button>
+            </div>
+
+
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars fa-2x"></i>
+            </div>
+
+        </header>
+        <main class="lg:flex lg:mt-20 ">
+            <div class="flex items-center justify-center lg:flex-1 order-2 lg:justify-end image">
+                <img src="wfa.jpg" alt=""
+                    class="outline outline-white shadow-black lg:h-[600px] lg:w-[600px] lg:rounded-full">
+
+            </div>
+            <div class="space-y-6 mt-16 lg:flex-1 order-1 text">
+                <div class=" text-7xl font-bold leading-tight">
+                    <h1>Switch To</h1>
+                    <h1>To Remote</h1>
+                </div>
+                <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias architecto, quia
+                    vitae nobis
+                    dignissimos hic reiciendis possimus consectetur quae, laudantium adipisci aliquam ipsam dolorum eos
+                    deleniti sed quisquam officia officiis?</p>
+                <form action="" class="flex flex-col gap-2 md:flex-row gap-0 px-3">
+                    <input type="text" placeholder="Enter City" class="rounded-md  py-2 px-3 text-black md:w-96">
+                    <button class="bg-pink-600 py-3 px-3 mt-3 font-medium whitespace-nowrap md:rounded-md">Find Your
+                        Way</button>
+                </form>
+        </main>
+
+
+
+
+        <div class="flex flex-col gap-2 mt-4 lg:mt-1">
+            <p>Used By These Companies</p>
+            <ul class="flex gap-6">
+                <li><i class="fa-brands fa-facebook fa-2x"></i></li>
+                <li><i class="fa-brands fa-instagram fa-2x"></i></li>
+                <li><i class="fa-brands fa-twitter fa-2x"></i></li>
+                <li><i class="fa-brands fa-google fa-2x"></i></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const scroll=ScrollReveal({
+            reset:true,
+            duration:2000,
+            distance:'60px'
+
+
+        })
+        scroll.reveal('.image',{delay: 400, origin:'top'})
+        scroll.reveal('.text',{delay: 300, origin:'top'})
+        scroll.reveal('.head',{delay: 100, origin:'top'})
+
+    </script>
+
+
+</body>
+
+</html>
